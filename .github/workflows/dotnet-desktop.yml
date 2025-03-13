@@ -64,7 +64,7 @@ jobs:
         name: TeraFinder.Launcher
         path: TeraFinder.Launcher/bin
 
-    - name: Upload Plugins artifacts
+    - name: Upload Plugins  artifacts
       uses: actions/upload-artifact@v4
       with:
         name: TeraFinder.Plugins
