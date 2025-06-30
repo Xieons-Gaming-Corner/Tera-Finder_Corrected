@@ -9,7 +9,7 @@ namespace TeraFinder.Plugins;
 
 public class TeraPlugin : ITFPlugin
 {
-    public string Version { get; init; } = "4.3.0";
+    public string Version { get; init; } = "4.3.3";
     private bool UpdatePrompted = false;
 
     public string Name => nameof(TeraFinder);
@@ -29,7 +29,7 @@ public class TeraPlugin : ITFPlugin
     public EncounterEventTF9[] Mighty { get; set; } = null!;
     public Dictionary<uint, HashSet<EncounterEventTF9>> AllDist { get; set; } = null!;
     public Dictionary<uint, HashSet<EncounterEventTF9>> AllMighty { get; set; } = null!;
-    private uint EventRaidIdentifier = 0;
+    private uint EventRaidIdentifier = uint.MaxValue;
 
 
     public SAV9SV SAV { get; set; } = null!;
